@@ -1,0 +1,22 @@
+[
+ {
+ "question": "Какая страна самая большая в мире?",
+ "answers": [
+ {"text": "Россия", "correct": true},
+ {"text": "США", "correct": false},
+ {"text": "Китай", "correct": false},
+ {"text": "Канада", "correct": false}
+ ],
+ "background": "backgrounds/russia.jpg"
+ },
+ {
+ "question": "Какой металл самый тяжелый?",
+ "answers": [
+ {"text": "Золото", "correct": false},
+ {"text": "Платина", "correct": false},
+ {"text": "Олово", "correct": false},
+ {"text": "Осмий", "correct": true}
+ ],
+ "background": "backgrounds/osmium.jpg"
+ },
+]
