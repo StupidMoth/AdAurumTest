@@ -45,7 +45,6 @@ namespace Game
 
         public void Start()
         {
-
             if (_loader.TryLoad(out SlideInfo[] slideInfos))
             {
                 _slides = slideInfos;
@@ -55,7 +54,7 @@ namespace Game
                 return;
             }
 
-            Debug.LogError("Не удалось загрузить набор слайдов");
+            Debug.LogError("Failed to load slides");
         }
 
         private void Restart()
@@ -78,8 +77,9 @@ namespace Game
         {
             if (_orderedSlides.Count > 0)
             {
-                _currentSlide = new Slide(_orderedSlides.Dequeue());
                 _screens.Enter<QuestionScreenState>();
+
+                _currentSlide = new Slide(_orderedSlides.Dequeue());
                 _screens.SetSlide(_currentSlide);
 
                 return;
